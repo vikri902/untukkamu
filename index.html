@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valentine Love 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+    <!-- Efek Partikel -->
+    <div id="particles-js"></div>
+
+    <!-- Halaman Login -->
+    <div class="container" id="loginPage">
+        <h1>💝 Halo Sayang 💝</h1>
+        <p>Masukkan nama kamu cinta! ❤️</p>
+        <input type="text" id="username" placeholder="Masukkan nama..." required>
+        <button onclick="startLove()">💌 Masuk</button>
+    </div>
+
+    <!-- Halaman Cinta -->
+    <div class="container hidden" id="lovePage">
+        <h1>Welcome Sayang, <span id="userDisplay"></span>! 💕</h1>
+        <div id="quoteBox">
+            <p id="loveText">Cinta adalah ketika hati berbicara tanpa kata. 💕</p>
+        </div>
+        <button onclick="toggleMusic()">🎶 pause Musik</button>
+
+        <!-- Pemutar Musik -->
+        <audio id="loveMusic" loop>
+            <source src="Anugerah Terindah Biarkan semua manusia jadi saksi nyata Lagu Andmesh Kamaleng.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
